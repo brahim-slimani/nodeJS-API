@@ -8,6 +8,8 @@ const error_message = "something went wrong !";
 const unauthorized_message = "you are unauthorized";
 const badCredentials_message = "bad credentials";
 
+const api_prefix = "/node"
+
 //custom response
 const customResponse = require("./customResponse");
 
@@ -18,5 +20,6 @@ module.exports = {
     error_message,
     unauthorized_message,
     badCredentials_message,
+    api_prefix,
     customResponse
 }

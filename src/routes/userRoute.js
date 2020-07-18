@@ -1,1 +1,1 @@
-const express = require("express");const router = express.Router();const userController = require("../controllers/userController");router.post("/login", userController.login);module.exports = router;
+const express = require("express");const router = express.Router();const userController = require("../controllers/userController");const { api_prefix } = require("../helpers");router.post(api_prefix+"/login", userController.login);module.exports = router;
