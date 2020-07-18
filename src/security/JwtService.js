@@ -13,10 +13,6 @@ const generateJwtAccess = (req, res) => {
                 .json({code:success_code, message:success_message, token:"Bearer "+token});
         }
     });
-
-    jwt.sign({"salam":"salam"}, process.env.SECRET_KEY, (err, token) => {
-        console.log("Bearer "+token);
-    })
 }
 
 
